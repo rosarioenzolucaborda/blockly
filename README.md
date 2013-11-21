@@ -3,6 +3,8 @@ Running Blockly
 
 Blockly can be used on- or off-line with [modern web browsers](http://browsehappy.com/).
 
+![Hour of Code banner](http://csedweek.org/images/bannerD.jpg)
+
 Running Blockly Locally
 -----------------------
 *This option is recommended for people wishing to participate in the [Hour of Code]((http://csedweek.org/) on computers 
