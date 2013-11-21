@@ -19,7 +19,7 @@ To run Blockly on your own computer when not connected to the Internet:
 2. Unzip the file.
 3. Open "index.html" in a web browser.
 
-The zip version does not include the Graph or Plane apps or tools for modifying Blockly.  If you prefer, you
+The zip version omits the Graph and Plane apps and the ability to modify Blockly.  If you prefer, you
 can install the full distribution from [github](https://github.com/google/blockly) or 
 [Google Code](https://code.google.com/p/blockly/).
 
