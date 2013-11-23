@@ -52,6 +52,7 @@ BlocklyApps.LANGUAGE_NAME = {
   'he': 'עברית',
   'hu': 'Magyar',
   'ia': 'Interlingua',
+  'id': 'Bahasa Indonesia',
   'it': 'Italiano',
   'ja': '日本語',
   'ka': 'ქართული',
@@ -76,6 +77,7 @@ BlocklyApps.LANGUAGE_NAME = {
   'pms': 'Piemontèis',
   'ps': 'پښتو',
   'pt': 'Português',
+  'ro': 'Română',
   'pt-br': 'Português Brasileiro',
   'ru': 'Русский',
   'sk': 'Slovenčina',
@@ -100,18 +102,31 @@ BlocklyApps.LANGUAGE_RTL = ['ar', 'fa', 'he', 'mzn', 'ps'];
  * Lookup for Blockly core block language pack.
  */
 BlocklyApps.LANGUAGE_PACK = {
+  'ar': 'msg/js/ar.js',
   'cdo': 'msg/js/zh_tw.js',
   'de': 'msg/js/de.js',
+  'el': 'msg/js/el.js',
+  'es': 'msg/js/es.js',
+  'fa': 'msg/js/fa.js',
+  'fr': 'msg/js/fr.js',
   'frr': 'msg/js/de.js',
   'hu': 'msg/js/hu.js',
+  'id': 'msg/js/id.js',
+  'it': 'msg/js/it.js',
   'ksh': 'msg/js/de.js',
   'lb': 'msg/js/de.js',
+  'nl': 'msg/js/nl.js',
+  'no': 'msg/js/no.js',
+  'pms': 'msg/js/it.js',
   'pt': 'msg/js/pt_br.js',
   'pt-br': 'msg/js/pt_br.js',
+  'ro': 'msg/js/ro.js',
+  'ru': 'msg/js/ru.js',
+  'sv': 'msg/js/sv.js',
   'uk': 'msg/js/uk.js',
   'vi': 'msg/js/vi.js',
-  'zh-hans': 'msg/js/zh_tw.js',
-  'zh-hant': 'msg/js/zh_tw.js',
+  'zh-hans': 'msg/js/zh-hans.js',
+  'zh-hant': 'msg/js/zh-hans.js',
   'zh-tw': 'msg/js/zh_tw.js',
   'default': 'msg/js/en.js'
 };
@@ -338,9 +353,13 @@ BlocklyApps.loadBlocks = function(defaultXml) {
  */
 BlocklyApps.changeLanguage = function() {
   // Store the blocks for the duration of the reload.
-  var xml = Blockly.Xml.workspaceToDom(Blockly.mainWorkspace);
-  var text = Blockly.Xml.domToText(xml);
-  window.sessionStorage.loadOnceBlocks = text;
+  // This should be skipped for the index page, which has no blocks and does
+  // not load Blockly.
+  if (typeof Blockly != 'undefined') {
+    var xml = Blockly.Xml.workspaceToDom(Blockly.mainWorkspace);
+    var text = Blockly.Xml.domToText(xml);
+    window.sessionStorage.loadOnceBlocks = text;
+  }
 
   var languageMenu = document.getElementById('languageMenu');
   var newLang = encodeURIComponent(

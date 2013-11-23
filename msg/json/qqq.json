@@ -1,4 +1,10 @@
 {
+    "@metadata": {
+        "authors": [
+            "Espertus",
+            "Shirayuki"
+        ]
+    },
     "VARIABLES_DEFAULT_NAME": "default name - A simple, general default name for a variable, preferably short. For more context, see [[Translating:Blockly#infrequent_message_types]].",
     "DUPLICATE_BLOCK": "context menu - Make a copy of the selected block (and any blocks it contains).",
     "ADD_COMMENT": "context menu - Add a descriptive comment to the selected block.",
@@ -38,7 +44,7 @@
     "COLOUR_BLEND_TOOLTIP": "tooltip - See [https://code.google.com/p/blockly/wiki/Colour#Blending_colours https://code.google.com/p/blockly/wiki/Colour#Blending_colours].",
     "CONTROLS_REPEAT_HELPURL": "url - Describes 'repeat loops' in computer programs; consider using the translation of the page [http://en.wikipedia.org/wiki/Control_flow http://en.wikipedia.org/wiki/Control_flow].",
     "CONTROLS_REPEAT_TITLE": "block input text - Title of [https://code.google.com/p/blockly/wiki/Loops#repeat repeat block].\n\nParameters:\n* %1 - the number of times the body of the loop should be repeated.",
-    "CONTROLS_REPEAT_TITLE_REPEAT": "block text - Text preceding the number of repetitions in a [https://code.google.com/p/blockly/wiki/Loops#repeat repeat block]. (This is redundant with the previous message but is needed to support older code.)",
+    "CONTROLS_REPEAT_TITLE_REPEAT": "block text - Text preceding the number of repetitions in a [https://code.google.com/p/blockly/wiki/Loops#repeat repeat block]. (This is redundant with the previous message but is needed to support older code.)\n{{Identical|Repeat}}",
     "CONTROLS_REPEAT_TITLE_TIMES": "block text - Text following the number of times a [https://code.google.com/p/blockly/wiki/Loops#repeat repeat loop] should be repeated. (This is redundant but is needed to support older code.)",
     "CONTROLS_REPEAT_INPUT_DO": "block text - Preceding the blocks in the body of the loop.  See [https://code.google.com/p/blockly/wiki/Loops https://code.google.com/p/blockly/wiki/Loops].",
     "CONTROLS_REPEAT_TOOLTIP": "tooltip - See [https://code.google.com/p/blockly/wiki/Loops#repeat https://code.google.com/p/blockly/wiki/Loops#repeat].",
@@ -102,6 +108,17 @@
     "LOGIC_TERNARY_TOOLTIP": "tooltip - See [http://en.wikipedia.org/wiki/%3F: http://en.wikipedia.org/wiki/%3F:].",
     "MATH_NUMBER_HELPURL": "url - Information about (real) numbers.",
     "MATH_NUMBER_TOOLTIP": "tooltip - Any positive or negative number, not necessarily an integer.",
+    "MATH_ADDITION_SYMBOL": "math - The symbol for the binary operation addition.",
+    "MATH_SUBTRACTION_SYMBOL": "math - The symbol for the binary operation indicating that the right operand should be subtracted from the left operand.",
+    "MATH_DIVISION_SYMBOL": "math - The binary operation indicating that the left operand should be divided by the right operand.",
+    "MATH_MULTIPLICATION_SYMBOL": "math - The symbol for the binary operation multiplication.",
+    "MATH_POWER_SYMBOL": "math - The symbol for the binary operation exponentiation.  Specifically, if the value of the left operand is L and the value of the right operand (the exponent) is R, multiply L by itself R times.  (Fractional and negative exponents are also legal.)",
+    "MATH_TRIG_SIN": "math - The short name of the trigonometric function [http://en.wikipedia.org/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent sine].",
+    "MATH_TRIG_COS": "math - The short name of the trigonometric function [http://en.wikipedia.org/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent cosine].",
+    "MATH_TRIG_TAN": "math - The short name of the trigonometric function [http://en.wikipedia.org/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent tangent].",
+    "MATH_TRIG_ASIN": "math - The short name of the ''inverse of'' the trigonometric function [http://en.wikipedia.org/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent sine].",
+    "MATH_TRIG_ACOS": "math - The short name of the ''inverse of'' the trigonometric function [http://en.wikipedia.org/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent cosine].",
+    "MATH_TRIG_ATAN": "math - The short name of the ''inverse of'' the trigonometric function [http://en.wikipedia.org/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent tangent].",
     "MATH_ARITHMETIC_HELPURL": "url - Information about addition, subtraction, multiplication, division, and exponentiation.",
     "MATH_ARITHMETIC_TOOLTIP_ADD": "tooltip - See [http://en.wikipedia.org/wiki/Addition http://en.wikipedia.org/wiki/Addition].",
     "MATH_ARITHMETIC_TOOLTIP_MINUS": "tooltip - See [http://en.wikipedia.org/wiki/Subtraction http://en.wikipedia.org/wiki/Subtraction].",
@@ -122,7 +139,7 @@
     "MATH_TRIG_TOOLTIP_SIN": "tooltip - Return the [http://en.wikipedia.org/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent sine] of an [http://en.wikipedia.org/wiki/Degree_(angle) angle in degrees], not radians.",
     "MATH_TRIG_TOOLTIP_COS": "tooltip - Return the [http://en.wikipedia.org/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent cosine] of an [http://en.wikipedia.org/wiki/Degree_(angle) angle in degrees], not radians.",
     "MATH_TRIG_TOOLTIP_TAN": "tooltip - Return the [http://en.wikipedia.org/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent tangent] of an [http://en.wikipedia.org/wiki/Degree_(angle) angle in degrees], not radians.",
-    "MATH_TRIG_TOOLTIP_ASIN": "tooltip - The [http://en.wikipedia.org/wiki/Inverse_trigonometric_functions inverse] of the [http://en.wikipedia.org/wiki/Cosine#Sine.2C_cosine_and_tangent cotangent function], using [http://en.wikipedia.org/wiki/Degree_(angle) degrees], not radians.",
+    "MATH_TRIG_TOOLTIP_ASIN": "tooltip - The [http://en.wikipedia.org/wiki/Inverse_trigonometric_functions inverse] of the [http://en.wikipedia.org/wiki/Cosine#Sine.2C_cosine_and_tangent sine function], using [http://en.wikipedia.org/wiki/Degree_(angle) degrees], not radians.",
     "MATH_TRIG_TOOLTIP_ACOS": "tooltip - The [http://en.wikipedia.org/wiki/Inverse_trigonometric_functions inverse] of the [http://en.wikipedia.org/wiki/Cosine#Sine.2C_cosine_and_tangent cosine] function, using [http://en.wikipedia.org/wiki/Degree_(angle) degrees], not radians.",
     "MATH_TRIG_TOOLTIP_ATAN": "tooltip - The [http://en.wikipedia.org/wiki/Inverse_trigonometric_functions inverse] of the [http://en.wikipedia.org/wiki/Cosine#Sine.2C_cosine_and_tangent tangent] function, using [http://en.wikipedia.org/wiki/Degree_(angle) degrees], not radians.",
     "MATH_CONSTANT_HELPURL": "url - Information about the mathematical constants \u0026pi;, e, the golden ratio (\u0026phi;), \u0026radic; 2, \u0026radic; 1/2, and infinity (\u0026infin;).",

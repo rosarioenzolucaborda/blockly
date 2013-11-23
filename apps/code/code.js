@@ -23,7 +23,9 @@
  */
 
 // Supported languages.
-BlocklyApps.LANGUAGES = ['en', 'de', 'hu', 'uk', 'vi', 'zh-tw'];
+BlocklyApps.LANGUAGES = ['ar', 'en', 'de', 'el', 'es', 'fa', 'fr', 'hu', 'it',
+                         'nl', 'pt-br', 'ro', 'ru', 'sv', 'uk', 'vi',
+                         'zh-hans', 'zh-hant', 'zh-tw'];
 BlocklyApps.LANG = BlocklyApps.getLang();
 
 document.write('<script type="text/javascript" src="generated/' +
