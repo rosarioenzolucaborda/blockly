@@ -23,12 +23,12 @@
  */
 'use strict';
 
-goog.provide('Blockly.JavaScript');
+goog.provide('Blockly.Haskell');
 
 goog.require('Blockly.Generator');
 
 
-Blockly.JavaScript = new Blockly.Generator('JavaScript');
+Blockly.Haskell = new Blockly.Generator('Haskell');
 
 /**
  * List of illegal variable names.
@@ -37,7 +37,7 @@ Blockly.JavaScript = new Blockly.Generator('JavaScript');
  * accidentally clobbering a built-in object or function.
  * @private
  */
-Blockly.JavaScript.addReservedWords(
+Blockly.Haskell.addReservedWords(
     'Blockly,' +  // In case JS is evaled in the current window.
     // https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words
     'break,case,catch,continue,debugger,default,delete,do,else,finally,for,function,if,in,instanceof,new,return,switch,this,throw,try,typeof,var,void,while,with,' +
